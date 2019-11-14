@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header container">
   <a class="page-header__logo">
     <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="page-header__logo-image" width="86" height="35">
   </a>
@@ -16,10 +18,10 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
+          <a href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a href="#">Поиск по сайту</a>
@@ -31,7 +33,7 @@
     </div>
   </nav>
 </header>
-<main class="page-main">
+<main class="page-main container">
   <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
   <div class="objects-interior">
     <p class="objects-interior__description">Предметы интерьера</p>
@@ -96,7 +98,7 @@
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer container">
   <div class="page-footer__contacts contacts">
     <b class="contacts__title">Контакты</b>
     <p class="contacts__email">e-mail:<span class="contacts__email-mail">info@mimimishkashop.ru</span></p>
@@ -125,6 +127,7 @@
   <div class="page-footer__copyright copyright">
     <b class="copyright__text">Разработано:</b>
     <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Acahemy</a>
+    <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" class="copyright__image" width="27" height="34">
   </div>
 </footer>
 </body>

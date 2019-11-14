@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Мишка</title>
 </head>
 <body>
-
+<header class="page-header container">
+  <a href="index.html" class="page-header__logo">
+    <img src="img/logo-mobile.svg" alt="Логотип Мишка" class="page-header__logo-image" width="86" height="35">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a>Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-main container">
+  <h1 class="page-main__title">Вязание на заказ</h1>
+  <section class="catalog">
+    <ul class="catalog__list">
+      <li class="catalog__item">
+        <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" class="catalog__image" width="260"
+             height="195">
+        <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+        <p class="catalog__description">Рост 30 см, вес 200 г</p>
+        <b class="catalog__cost">1 200 руб.</b>
+      </li>
+      <li class="catalog__item">
+        <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" class="catalog__image" width="260"
+             height="195">
+        <h2 class="catalog__title">Корзинка для белья</h2>
+        <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+        <b class="catalog__cost">690 руб.</b>
+      </li>
+      <li class="catalog__item">
+        <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" class="catalog__image" width="260"
+             height="195">
+        <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+        <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+        <b class="catalog__cost">1 500 руб.</b>
+      </li>
+    </ul>
+  </section>
+  <section class="process-production">
+    <h2 class="process-production">Процесс производства</h2>
+    <img src="img/video-mobile@1x.jpg" alt="Производство" class="process-production__image" width="260" height="150">
+    <img src="img/icon-play.svg" alt="" class="process-production__video" width="101" height="77">
+    <p class="process-production_description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+      том, как появляются наши товары.</p>
+    <button class="process-production__button button" type="submit">Сделать заказ</button>
+  </section>
+</main>
+<footer class="page-footer container">
+  <div class="page-footer__contacts contacts">
+    <b class="contacts__title">Контакты</b>
+    <p class="contacts__email">e-mail:<span class="contacts__email-mail">info@mimimishkashop.ru</span></p>
+    <p class="contacts__address">адрес:<span class="contacts__address-office">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+    </p>
+  </div>
+  <div class="map">
+    <img src="img/map-mobile@1x.jpg" alt="" class="map__image" width="322" height="457">
+    <div class="map__write">
+      <button class="map__write-button" type="submit">Напишите нам</button>
+    </div>
+  </div>
+  <div class="page-footer-social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a href="#" class="social_link social_link--instagram">Инстаграм</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social_link social_link--facebook">Фэйсбук</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social_link social_link--twitter">Твитер</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <b class="copyright__text">Разработано:</b>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Acahemy</a>
+    <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" class="copyright__image" width="27" height="34">
+  </div>
+</footer>
 </body>
 </html>
